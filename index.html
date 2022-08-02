@@ -7,26 +7,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sneak</title>
 </head>
 <body>
+  <!--
+    Boa noite, Vinicius
+
+
+A imagem na seção CORRA COMO SE O MUNDO DEPENDESSE DE VOCÊ precisa ser inserida como background-img via css.
+
+Faltou inserir a seta junto ao texto CORRA COMO SE O MUNDO DEPENDESSE DE VOCÊ**
+
+A tag main está sendo fechada no local errado.**
+
+Faltou inserir "Designed by Mentorama"**
+
+Os ícones de redes sociais foram exportados sem a camada de cor aplicada, precisa de revisão.**
+
+Todos os elementos devem seguir o padrão do layout do figma.
+REFAZER A AVALIAÇÃO?
+  -->
   <header class="header">
-      <img src="../sneak/img/Header/SNEAK.sneakLogo.png" alt="">
-    <div>
+      <img src="img/Header/logo_Sneak.png" alt="Logo Sneak">
+    <nav>
       <ul>
         <li><a href="#">Masculino</a></li>
         <li><a href="#">Feminino</a></li>
-        <li><a href="#">Novidaes</a></li>
+        <li><a href="#">Novidades</a></li>
         <li><a href="#">Ofertas</a></li>
         <li><a href="#">Coleções</a></li>
       </ul>
-    </div>
+    </nav>
     <div>
-      <input id="inputSearch"  type="text" placeholder="Procurar">
+      <input id="inputSearch"  type="text" placeholder="Procurar"><img src="img/lupa.png">
       <button><img src="img/Header/Bagbag.svg" alt="Carrinho"></button>
     </div>
   </header>
-  <main>
+  <main> 
     <section>
       <div>
         <h1>SNEAK.<br>Ultra Light</h1>
@@ -34,15 +52,15 @@
           Os tênis SNEAK foram criados especificamente para treinos de circuito,
           seja para aulas fitness em casa ou para sua própria rotina de treinos.
         </p>
-        <button id="addToCar">Adicionar ao carrinho</button>
+        <button id="addToCar">Adicionar ao carrinho <img src="img/Vector.svg"> </button>
       </div>
       <div>
         <img src="img/tenis.png" alt="tênis branco sneak">
       </div>
     </section>
     <aside>
-        <h3>Corrida</h3>
-        <div>
+        <h3>Corrida - Masculino</h3>
+        <div class="section-runner">
           <div class="bolinha">Branco</div>
           <div class="bolinha">Bege</div>
           <div class="bolinha">Cinza</div>
@@ -82,10 +100,9 @@
       </div>
     </section>
     <aside>
-      <h3>
-        Corra <br> como se  o mundo <br> dependesse de você
-      </h3>
-      <img src="img/corredor.jpg" alt="Uma pessoa correndo">
+      <span>
+        <img src="img/arrow.png"> Corra <br> como se  o mundo <br> dependesse de você
+      </span>
     </aside>
     <aside>
       <div>
@@ -100,12 +117,13 @@
           <input type="checkbox" name="checkbox">
           Concordo com a politica de privacidade
         </label>
-        <input type="submit" >
+        <input type="submit" value="Enviar">
       </form>
     </aside>
+  </main>
     <footer>
       <div>
-        <img src="img/Header/SNEAK.sneakLogo.png" alt="Sneak">
+        <img src="img/Header/logo_Sneak.png" alt="Sneak">
       </div>
       <div>
         <h5>Sobre Sneak</h5>
@@ -133,7 +151,9 @@
           <li><a href=""><img src="img/twitter.png" alt="Twitter"></a></li>
         </ul>
       </div>
+      <div>
+        <p>Designed by <strong>Mentorama</strong></p>
+      </div>
     </footer>
-  </main>
 </body>
 </html>
