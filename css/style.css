@@ -8,7 +8,6 @@ header{
 }
 .container-flex{
   display: flex;
-  
 }
 .container-flex-spaced{
   justify-content: space-between;
@@ -81,7 +80,6 @@ main{
 .section-hero{
   margin-top: 40px;
   display: flex;
-   
 }
 .hero-foto{
   flex-grow: 4;
