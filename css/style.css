@@ -221,20 +221,26 @@ aside.aside-1 .addToCar{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.section-2__content{
+  width: 561px;
+}
 .section-2 p{
   width: 80%;
   text-align: left;
-  padding-left: 19px;
+}
+
+.section-2 h3{
+  margin-bottom: 10px;
 }
 .section-2>div>div{
   vertical-align: middle;
   font-family: Lato;
 }
-.invert>div, .invert h3{
-  text-align: center;
-}
 div.invert p{
   margin-left: 10%;
+}
+.invert h3{
+  margin-left: 58px;
 }
 .img-section2 img{
   max-width: 550px;
@@ -275,7 +281,6 @@ div.invert p{
   display: inline-block;
   color: #1F1F1F;
   background-color: #F3F3F3;
-  max-height: 80vh;
   height: 836px;
   padding: 2%;
   font-family: lato,Arial, Helvetica, sans-serif;
