@@ -263,28 +263,42 @@ div.invert p{
   line-height: 140%;
 }
 .aside-contato{
-  display: flex;
+  /*display: flex;
   max-height: 60%;
-  margin-top: 200px;
   flex-direction: row;
+  */
+  margin: 200px auto ;
+  height: min-content;
   width: 100%;
 }
+.div__aside_contato--fix{
+  margin: auto;
+  width: 1232px;
+}
 .div-map{
-  display: inline-block;
   background-repeat: no-repeat;
   background-image: url(../img/map.png);
+  background-size: cover;
+  width: 800px;
+  display: inline;
+  height: 700px;
+  float: left;
+  /*
   min-width: 500px;
+  display: inline-block;
   min-height: 500px;
   width: 60%;
+  */
 }
 .form{
-  display: inline-block;
   color: #1F1F1F;
   background-color: #F3F3F3;
-  height: 836px;
   padding: 2%;
+  width: 35%;
+  display: inline-block;
+  height: 700px;
+  box-sizing: border-box ;
   font-family: lato,Arial, Helvetica, sans-serif;
-  width: 30%;
 }
 .form>h3{
   font-size: 2em;
@@ -306,7 +320,8 @@ div.invert p{
 }
 .form >textarea{
   resize: none;
-  height: 25%;
+  height: 35%;
+  outline: none;
   font: 1em Lato;
 }
 input,button{
