@@ -20,7 +20,7 @@ header{
 }
 .container {
   max-width: 100%;
-  margin: 0 3%;
+  margin: 0 80px;
 }
 .logo{
   justify-self: left;
@@ -76,7 +76,7 @@ nav li{
   width: 52px;
 }
 main{
-  margin: 0 3%;
+  margin: 0 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -207,18 +207,20 @@ aside.aside-1 .addToCar{
 }
 .section-2{
   margin-top: 70px;
+  width: 100%
 }
 .section-2>div{
   display: flex;
   margin: 80px 0;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .invert{
   flex-direction: row-reverse;
 }
 .section-2 h3{
   color: #9F9F9F;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bolder;
   margin-top: 0;
   text-transform: capitalize;
@@ -252,14 +254,16 @@ div.invert p{
   margin-left: 58px;
 }
 .img-section2 img{
-  max-width: 550px;
+  /*max-width: 550px;*/
+  width: 100%;
+  height: auto;
 }
 .section-runner{
   background-image:url('../img/corredor.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  width: 106.4%;
+  width: 100%;
   height: 720px;
 }
 .section-runner span{
@@ -267,7 +271,7 @@ div.invert p{
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 3%;
+  /*margin: 3%;*/
   display: block;
   line-height: 140%;
 }
@@ -308,6 +312,7 @@ div.invert p{
   height: 700px;
   box-sizing: border-box ;
   font-family: Lato,Arial, Helvetica, sans-serif;
+  border-radius: 0 8px 8px 0 ;
 }
 .form>h3{
   font-size: 2em;
@@ -332,6 +337,7 @@ div.invert p{
   height: 35%;
   outline: none;
   font: 1em Lato;
+
 }
 input,button{
   outline: none;
@@ -401,6 +407,7 @@ footer h5{
 }
 .authors-bar{
   margin-top: 3%;
+  background: #F2F2F2;
 }
 .authors-bar>p{
   margin: 10px 0 0 0;
