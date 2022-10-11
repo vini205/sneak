@@ -284,17 +284,17 @@ div.invert p{
   height: min-content;
   width: 100%;
 }
-.div__aside_contato--fix{
+/*.div__aside_contato--fix{
   margin: auto;
   width: 1232px;
-}
+}*/
 .div-map{
   background-repeat: no-repeat;
   background-image: url(../img/map.png);
   background-size: cover;
-  width: 800px;
+  width: 64%;
   display: inline;
-  height: 700px;
+  height: 56em;
   float: left;
   /*
   min-width: 500px;
@@ -309,7 +309,7 @@ div.invert p{
   padding: 2%;
   width: 35%;
   display: inline-block;
-  height: 700px;
+  height: 56em;
   box-sizing: border-box ;
   font-family: Lato,Arial, Helvetica, sans-serif;
   border-radius: 0 8px 8px 0 ;
