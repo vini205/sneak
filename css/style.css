@@ -1,9 +1,14 @@
+@font-face {
+  src: url('fonte\Gilroy-ExtraBold.otf') ;
+  font-family: 'Gilroy'
+}
 body{
   margin: 0;
 }
 header{
   padding: 29px 0;
-  font-family: Lato;
+  font-family: 'Gilroy',Lato, sans-serif;
+  font-weight: 500;
   color: black;
 }
 .container-flex{
@@ -15,7 +20,7 @@ header{
 }
 .container {
   max-width: 100%;
-  margin: 0 3%;
+  margin: 0 80px;
 }
 .logo{
   justify-self: left;
@@ -71,7 +76,7 @@ nav li{
   width: 52px;
 }
 main{
-  margin: 0 3%;
+  margin: 0 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,13 +164,13 @@ aside.aside-1 .addToCar{
 }
 .aside-1 h3{
   font-weight: 700;
-  font-family: Lato;
+  font-family: 'Gilroy',lato,sans-serif;
   font-size: 2em;
   text-transform: uppercase;
 }
 .aside-1 p{
   font-weight: 700;
-  font-family: Lato;
+  font-family: 'Gilroy',lato,sans-serif;
 }
 .aside-1>div{
   margin: auto;
@@ -205,18 +210,21 @@ aside.aside-1 .addToCar{
 }
 .section-2{
   margin-top: 70px;
+  width: 100%
 }
 .section-2>div{
   display: flex;
   margin: 80px 0;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .invert{
   flex-direction: row-reverse;
 }
 .section-2 h3{
   color: #9F9F9F;
-  font-size: 3em;
+  font-size: 4em;
+  font-weight: bolder;
   margin-top: 0;
   text-transform: capitalize;
   background-image: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
@@ -224,30 +232,41 @@ aside.aside-1 .addToCar{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.section-2__content{
+  width: 561px;
+}
 .section-2 p{
   width: 80%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   text-align: left;
-  padding-left: 19px;
+}
+
+.section-2 h3{
+  margin-bottom: 10px;
 }
 .section-2>div>div{
   vertical-align: middle;
   font-family: Lato;
 }
-.invert>div, .invert h3{
-  text-align: center;
-}
 div.invert p{
   margin-left: 10%;
 }
+.invert h3{
+  margin-left: 58px;
+}
 .img-section2 img{
-  max-width: 550px;
+  /*max-width: 550px;*/
+  width: 100%;
+  height: auto;
 }
 .section-runner{
   background-image:url('../img/corredor.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  width: 106.4%;
+  width: 100%;
   height: 720px;
 }
 .section-runner span{
@@ -255,39 +274,53 @@ div.invert p{
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 3%;
+  /*margin: 3%;*/
   display: block;
   line-height: 140%;
 }
 .-contato{
   display: flex;
   max-height: 60%;
-  margin-top: 200px;
   flex-direction: row;
+  */
+  margin: 200px auto ;
+  height: min-content;
   width: 100%;
 }
+/*.div__aside_contato--fix{
+  margin: auto;
+  width: 1232px;
+}*/
 .div-map{
-  display: inline-block;
   background-repeat: no-repeat;
   background-image: url(../img/map.png);
+  background-size: cover;
+  width: 64%;
+  display: inline;
+  height: 56em;
+  float: left;
+  /*
   min-width: 500px;
+  display: inline-block;
   min-height: 500px;
   width: 60%;
+  */
 }
 .form{
-  display: inline-block;
   color: #1F1F1F;
   background-color: #F3F3F3;
-  max-height: 80vh;
-  height: 836px;
   padding: 2%;
-  font-family: lato,Arial, Helvetica, sans-serif;
-  width: 30%;
+  width: 35%;
+  display: inline-block;
+  height: 56em;
+  box-sizing: border-box ;
+  font-family: Lato,Arial, Helvetica, sans-serif;
+  border-radius: 0 8px 8px 0 ;
 }
 .form>h3{
   font-size: 2em;
   margin-top: 0;
-  font-family: lato,Arial, Helvetica, sans-serif;
+  font-family: Lato,Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
 .form > input,textarea{
@@ -304,8 +337,10 @@ div.invert p{
 }
 .form >textarea{
   resize: none;
-  height: 25%;
+  height: 35%;
+  outline: none;
   font: 1em Lato;
+
 }
 input,button{
   outline: none;
@@ -375,6 +410,7 @@ footer h5{
 }
 .authors-bar{
   margin-top: 3%;
+  background: #F2F2F2;
 }
 .authors-bar>p{
   margin: 10px 0 0 0;
