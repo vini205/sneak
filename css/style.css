@@ -28,7 +28,7 @@ a{
 }
 nav{
   flex-shrink: 0;
-  
+
   flex-grow: 0.1;
   width: 490px;
 }
@@ -98,7 +98,7 @@ main{
   color: #9F9F9F;
   font-size: 6em;
   margin: 0 0 10px 0;
-  background-image: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);  
+  background-image: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -107,7 +107,7 @@ main{
   font-family: Lato;
   font-weight: 300;
   font-size: 1.3em;
-  width: 89%;
+  max-width: 440px;
   line-height: 110%;
 }
 .addToCar{
@@ -152,8 +152,7 @@ main{
   padding: 40px;
 }
 aside.aside-1 .addToCar{
-  max-width: none;
-  min-width: none;
+  margin-top: 5%;
   width: 18%;
   background-image: none;
   text-align: center;
@@ -162,6 +161,7 @@ aside.aside-1 .addToCar{
   font-weight: 700;
   font-family: Lato;
   font-size: 2em;
+  text-transform: uppercase;
 }
 .aside-1 p{
   font-weight: 700;
@@ -169,6 +169,9 @@ aside.aside-1 .addToCar{
 }
 .aside-1>div{
   margin: auto;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
 }
 .bolinha-div{
   display: flex;
@@ -216,7 +219,7 @@ aside.aside-1 .addToCar{
   font-size: 3em;
   margin-top: 0;
   text-transform: capitalize;
-  background-image: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);  
+  background-image: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -256,7 +259,7 @@ div.invert p{
   display: block;
   line-height: 140%;
 }
-.aside-contato{
+.-contato{
   display: flex;
   max-height: 60%;
   margin-top: 200px;
@@ -308,7 +311,7 @@ input,button{
   outline: none;
 }
 .checkbox-label{
-  
+
   font-size: 0.8em;
   color: #969696;
 }
@@ -363,7 +366,7 @@ footer h5{
   font-weight: 300;
 }
 .footer-links > div{
-  text-align: left; 
+  text-align: left;
   margin-top: 4%;
 }
 .social{
