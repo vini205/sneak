@@ -80,7 +80,6 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .section-hero{
   margin-top: 40px;
@@ -115,9 +114,15 @@ main{
   max-width: 440px;
   line-height: 110%;
 }
+button.btn-hero{
+  width: 44%;
+  height: 16%;
+  font-size: 1.2em;
+  max-width: 290px;
+}
 .addToCar{
   background-image: url('../img/Vector.svg');
-  background-position: 180px 50%;
+  background-position: 90% 50%;
   background-repeat: no-repeat;
   margin-top:10%;
   border: 2px solid black;
@@ -130,6 +135,7 @@ main{
   vertical-align: middle;
   max-width: 50%;
   min-width: 220px;
+  box-sizing: border-box;
   transition: border 0.5s, background-color 0.8s;
 }
 .addToCar:hover{
@@ -158,6 +164,8 @@ main{
 }
 aside.aside-1 .addToCar{
   margin-top: 5%;
+  height: 16%;
+  font-size: 1.2em;
   width: 18%;
   background-image: none;
   text-align: center;
@@ -170,6 +178,7 @@ aside.aside-1 .addToCar{
 }
 .aside-1 p{
   font-weight: 700;
+  font-size: 1.4em;
   font-family: 'Gilroy',lato,sans-serif;
 }
 .aside-1>div{
@@ -278,33 +287,32 @@ div.invert p{
   display: block;
   line-height: 140%;
 }
+.aside-contato{
+  margin-top: 150px;
+}
 .-contato{
   display: flex;
   max-height: 60%;
   flex-direction: row;
-  */
   margin: 200px auto ;
   height: min-content;
   width: 100%;
 }
-/*.div__aside_contato--fix{
+.div__aside_contato--fix{
   margin: auto;
-  width: 1232px;
-}*/
+}
 .div-map{
   background-repeat: no-repeat;
   background-image: url(../img/map.png);
   background-size: cover;
-  width: 64%;
-  display: inline;
   height: 56em;
   float: left;
-  /*
+
   min-width: 500px;
   display: inline-block;
   min-height: 500px;
   width: 60%;
-  */
+
 }
 .form{
   color: #1F1F1F;
@@ -325,7 +333,7 @@ div.invert p{
 }
 .form > input,textarea{
   box-sizing: border-box;
-  font-size: 1em;
+  font-size: 1.4em;
   background: #FFFFFF;
   border-radius: 12px;
   border: none;
@@ -339,15 +347,14 @@ div.invert p{
   resize: none;
   height: 35%;
   outline: none;
-  font: 1em Lato;
+  font: 1.4em Lato;
 
 }
 input,button{
   outline: none;
 }
 .checkbox-label{
-
-  font-size: 0.8em;
+  font-size: 1.8em;
   color: #969696;
 }
 .check{
@@ -368,6 +375,7 @@ button.send{
   width: 100%;
   border: 2px solid #1F1F1F;
   border-radius: 12px;
+  font-size: 1.4em;
 }
 .footer-links{
   background-color: #F3F3F3;
@@ -385,6 +393,9 @@ footer{
   margin-top: 9%;
   font-family: Lato,Arial, Helvetica, sans-serif;
 }
+.footer__logo{
+  width: 124px;
+}
 footer h5{
   margin-top: 0;
   margin-bottom: 20px;
@@ -397,7 +408,7 @@ footer h5{
   padding-left: 0;
 }
 .footer-links a{
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: 300;
 }
 .footer-links > div{
@@ -416,6 +427,7 @@ footer h5{
   margin: 10px 0 0 0;
   font-weight: 700;
   padding-bottom: 20px;
+  font-size: 1.9em;
 }
 .authors-bar strong{
   font-weight: 800;
