@@ -131,7 +131,7 @@ main{
   line-height: 110%;
 }
 button.btn-hero{
-  width: 44%;
+  width: calc(60% + 28px );
   height: 16%;
   font-size: 1.2em;
   max-width: 290px;
