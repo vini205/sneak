@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container container-flex container-flex-spaced">
       <div class="logo"><img src="img/Header/logo_Sneak.png" alt="Logo Sneak"></div>
-    <nav>
+    <nav class="nav">
       <ul>
         <li><a href="#" tabindex="0">Masculino</a></li>
         <li><a href="#" tabindex="1">Feminino</a></li>
@@ -41,7 +41,11 @@
         <button class="addToCar btn-hero">Adicionar ao carrinho  </button>
       </div>
       <div class="hero-foto">
-        <img src="img/tenis.png" alt="tênis branco sneak">
+        <picture>
+        <!--  <source media="(max-width:768px)" srcset="img/tablet_images/tenis_hero.jpg">-->
+          <img src="img/tenis.png" alt="tênis branco sneak">
+        </picture>
+
       </div>
     </section>
     <aside class="aside-1">
@@ -117,7 +121,7 @@
   </main>
     <footer>
       <div class="footer-links">
-        <div>
+        <div class="logo__footer--fix">
           <img src="img/Header/logo_Sneak.png" class="footer__logo" alt="Sneak">
         </div>
         <div>
