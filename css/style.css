@@ -22,6 +22,17 @@
     font-size: 16px;
   }
 }
+@media screen and (min-width:1020px) {
+  div.hero-foto{
+    height: 700px;
+  }
+}
+@media screen and (max-width:895px) {
+  div.hero-foto{
+    height: 336px;
+  }
+}
+
 @media screen and (max-width:768px) {
 
   input.header-search{
@@ -71,14 +82,17 @@
   main .hero-text h1{
     font-size: 62px;
   }
-
+  .hero-foto:hover img.img__header-svg {
+    left: 50%;
+  }
   div.hero-text{
     width: 50%;
     padding-right: 0;
     margin-right: 0;
   }
   div.hero-foto{
-    width: 49%
+    width: 49%;
+    height: 325px;
   }
   aside.aside-1{
     margin-left: 0px;
@@ -263,10 +277,31 @@ nav li{
 }
 .hero-foto{
   flex-grow: 4;
+  text-align: center;
+  height: 554px;
 }
-.hero-foto img{
-  width: 100%;
+.img__header-svg{
+  width: 35%;
+  left: 54%;
+  position: absolute;
+  transition: left 2s ease;
 }
+.img__header-tenis{
+  width: 29%;
+  transition: left 2s;
+  position: absolute;
+  top: 165px;
+  left: 60%;
+}
+.hero-foto:hover .img__header-svg{
+  transition: all 1s cubic-bezier(0.18, 1.13, 1, 0.99);
+  left: 51%;
+}
+.hero-foto:hover .img__header-tenis{
+  transition: all 1s cubic-bezier(0.18, 1.13, 1, 0.99);
+  left: 65%;
+}
+
 .hero-text{
   display: flex;
   width: 50%;
