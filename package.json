@@ -5,7 +5,7 @@
   "source": "index.html",
   "scripts": {
     "dev": "parcel ",
-    "b": "parcel build"
+    "b": "parcel build --public-url ./"
   },
   "repository": {
     "type": "git",
