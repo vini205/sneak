@@ -1,0 +1,25 @@
+{
+  "name": "sneak",
+  "version": "1.0.0",
+  "description": "Projeto Mentorama",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel ",
+    "b": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vini205/sneak.git"
+  },
+  "author": "Vinícius Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vini205/sneak/issues"
+  },
+  "homepage": "https://github.com/vini205/sneak#readme",
+  "devDependencies": {
+    "@parcel/transformer-less": "^2.8.2",
+    "less": "^4.1.3",
+    "parcel": "^2.8.2"
+  }
+}
