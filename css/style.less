@@ -453,7 +453,7 @@ button.btn-hero{
   transition: border 0.5s, background-color 0.8s;
   vertical-align: middle;
   &:hover{
-    background-color: @white;
+    background-color: #cccccc;
     border-radius: 12px;
     border: 1px solid transparent;
   }
@@ -503,22 +503,28 @@ button.btn-hero{
 }
 .bolinha(){
   opacity: 0.5;
-  border: 2px solid #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 1);
 }
 .bolinha{
   height: 30px;
   width: 30px;
   border-radius: 50px;
   margin:0 5px;
+  transition: all 1s;
+  &:hover{
+    border: 3px solid rgb(51, 48, 48) !important;
+  }
   &-div{
     display: flex;
     flex-direction: row;
     justify-content: center;
 
   }
+  &.selected{
+    border: solid 2px rgba(31, 31, 31, 0.5) !important;
+  }
   &:nth-child(1){
     background: linear-gradient(270.06deg, #E4E4E4 20.97%, #FFFFFF 99.92%);
-    border: 2px solid rgba(31, 31, 31, 0.5);
   }
   &:nth-child(2){
     background: linear-gradient(277.74deg, #FFE08D 9.16%, #FFB757 91.03%);
@@ -594,7 +600,7 @@ div.invert{
   width: 100%;
   height: 720px;
   span{
-    font-size: 6.5em;
+    font-size: 4.5rem;
     font-weight: 700;
     text-transform: uppercase;
     font-family: @font-bold;
@@ -653,9 +659,15 @@ div.invert{
       outline: none;
       font: 1.4em @font_padrao;
     }
+    & button:hover{
+      background-color: #cccccc;
+      border-radius: 12px;
+      border: 1px solid transparent;
+    }
 }
 input,button{
   outline: none;
+  cursor: pointer;
 }
 .checkbox-label{
   display: block;
@@ -726,6 +738,12 @@ button.send{
   border: 2px solid #1F1F1F;
   border-radius: 12px;
   font-size: 1.4em;
+  transition: border 0.5s, background-color 0.8s;
+  &:hover{
+      background-color: #cccccc;
+      border-radius: 12px;
+      border: 1px solid transparent;
+  }
 }
 .footer{
   background-color: #F3F3F3;
